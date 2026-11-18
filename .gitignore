@@ -1,0 +1,9 @@
+# built by Scripts/build-deps.sh
+Vendor/build/
+Vendor/src/
+
+xcuserdata/
+.DS_Store
+build/
+default.profraw
+*.swp

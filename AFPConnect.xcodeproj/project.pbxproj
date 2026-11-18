@@ -1,0 +1,903 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 110;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		728CCA81309D364C00CDE944 /* AFPFS.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = 728CCA75309D364C00CDE944 /* AFPFS.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AFC0C0DE000000000000000C /* libAFPCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC0C0DE0000000000000001 /* libAFPCore.a */; };
+		AFC0C0DE000000000000000D /* libAFPCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC0C0DE0000000000000001 /* libAFPCore.a */; };
+		AFC0C0DE0000000000000022 /* libAFPCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC0C0DE0000000000000001 /* libAFPCore.a */; };
+		AFC0C0DE00000000000001A0 /* AFPHelper.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = AFC0C0DE00000000000001A1 /* AFPHelper.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		728CCA7F309D364C00CDE944 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 728CCA57309D361700CDE944 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 728CCA74309D364C00CDE944;
+			remoteInfo = AFPFS;
+		};
+		AFC0C0DE000000000000000E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 728CCA57309D361700CDE944 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFC0C0DE0000000000000005;
+			remoteInfo = AFPCore;
+		};
+		AFC0C0DE0000000000000010 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 728CCA57309D361700CDE944 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFC0C0DE0000000000000005;
+			remoteInfo = AFPCore;
+		};
+		AFC0C0DE0000000000000023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 728CCA57309D361700CDE944 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFC0C0DE0000000000000005;
+			remoteInfo = AFPCore;
+		};
+		AFC0C0DE00000000000001A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 728CCA57309D361700CDE944 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFC0C0DE00000000000001A3;
+			remoteInfo = AFPHelper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		728CCA86309D364C00CDE944 /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolder = Product;
+			files = (
+				728CCA81309D364C00CDE944 /* AFPFS.appex in Embed ExtensionKit Extensions */,
+			);
+			name = "Embed ExtensionKit Extensions";
+		};
+		AFC0C0DE00000000000001A4 /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolder = Product;
+			files = (
+				AFC0C0DE00000000000001A0 /* AFPHelper.xpc in Embed XPC Services */,
+			);
+			name = "Embed XPC Services";
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		728CCA5F309D361700CDE944 /* AFPConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AFPConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		728CCA75309D364C00CDE944 /* AFPFS.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = AFPFS.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFC0C0DE0000000000000001 /* libAFPCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAFPCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFC0C0DE0000000000000012 /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
+		AFC0C0DE0000000000000020 /* AFPConnectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AFPConnectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFC0C0DE00000000000001A1 /* AFPHelper.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = AFPHelper.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		728CCA82309D364C00CDE944 /* Exceptions for "AFPFS" folder in "AFPFS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 728CCA74309D364C00CDE944 /* AFPFS */;
+		};
+		AFC0C0DE0000000000000099 /* Exceptions for "AFPConnect" folder in "AFPConnect" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 728CCA5E309D361700CDE944 /* AFPConnect */;
+		};
+		AFC0C0DE00000000000001A5 /* Exceptions for "AFPHelper" folder in "AFPHelper" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = AFC0C0DE00000000000001A3 /* AFPHelper */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		728CCA61309D361700CDE944 /* AFPConnect */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				AFC0C0DE0000000000000099 /* Exceptions for "AFPConnect" folder in "AFPConnect" target */,
+			);
+			path = AFPConnect;
+			sourceTree = "<group>";
+		};
+		728CCA76309D364C00CDE944 /* AFPFS */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				728CCA82309D364C00CDE944 /* Exceptions for "AFPFS" folder in "AFPFS" target */,
+			);
+			path = AFPFS;
+			sourceTree = "<group>";
+		};
+		AFC0C0DE0000000000000002 /* AFPCore */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AFPCore;
+			sourceTree = "<group>";
+		};
+		AFC0C0DE0000000000000003 /* netatalk-client lib */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			name = "netatalk-client lib";
+			path = "Vendor/netatalk-client/lib";
+			sourceTree = "<group>";
+		};
+		AFC0C0DE0000000000000021 /* Unit Tests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			name = "Unit Tests";
+			path = Tests/unit;
+			sourceTree = "<group>";
+		};
+		AFC0C0DE00000000000001A6 /* AFPHelper */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				AFC0C0DE00000000000001A5 /* Exceptions for "AFPHelper" folder in "AFPHelper" target */,
+			);
+			path = AFPHelper;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		728CCA5C309D361700CDE944 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+				AFC0C0DE000000000000000D /* libAFPCore.a in Frameworks */,
+			);
+		};
+		728CCA72309D364C00CDE944 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+				AFC0C0DE000000000000000C /* libAFPCore.a in Frameworks */,
+			);
+		};
+		AFC0C0DE0000000000000008 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		AFC0C0DE0000000000000026 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+				AFC0C0DE0000000000000022 /* libAFPCore.a in Frameworks */,
+			);
+		};
+		AFC0C0DE00000000000001A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		728CCA56309D361700CDE944 = {
+			isa = PBXGroup;
+			children = (
+				728CCA61309D361700CDE944 /* AFPConnect */,
+				728CCA76309D364C00CDE944 /* AFPFS */,
+				AFC0C0DE00000000000001A6 /* AFPHelper */,
+				AFC0C0DE0000000000000002 /* AFPCore */,
+				AFC0C0DE0000000000000003 /* netatalk-client lib */,
+				AFC0C0DE0000000000000013 /* Config */,
+				AFC0C0DE0000000000000021 /* Unit Tests */,
+				728CCA60309D361700CDE944 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		728CCA60309D361700CDE944 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				728CCA5F309D361700CDE944 /* AFPConnect.app */,
+				728CCA75309D364C00CDE944 /* AFPFS.appex */,
+				AFC0C0DE00000000000001A1 /* AFPHelper.xpc */,
+				AFC0C0DE0000000000000001 /* libAFPCore.a */,
+				AFC0C0DE0000000000000020 /* AFPConnectTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFC0C0DE0000000000000013 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				AFC0C0DE0000000000000012 /* Base.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		728CCA5E309D361700CDE944 /* AFPConnect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 728CCA6E309D361700CDE944 /* Build configuration list for PBXNativeTarget "AFPConnect" */;
+			buildPhases = (
+				728CCA5B309D361700CDE944 /* Sources */,
+				728CCA5C309D361700CDE944 /* Frameworks */,
+				728CCA5D309D361700CDE944 /* Resources */,
+				728CCA86309D364C00CDE944 /* Embed ExtensionKit Extensions */,
+				AFC0C0DE00000000000001A4 /* Embed XPC Services */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFC0C0DE0000000000000011 /* PBXTargetDependency */,
+				728CCA80309D364C00CDE944 /* PBXTargetDependency */,
+				AFC0C0DE00000000000001AB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				728CCA61309D361700CDE944 /* AFPConnect */,
+			);
+			name = AFPConnect;
+			productName = AFPConnect;
+			productReference = 728CCA5F309D361700CDE944 /* AFPConnect.app */;
+			productType = "com.apple.product-type.application";
+		};
+		728CCA74309D364C00CDE944 /* AFPFS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 728CCA83309D364C00CDE944 /* Build configuration list for PBXNativeTarget "AFPFS" */;
+			buildPhases = (
+				728CCA71309D364C00CDE944 /* Sources */,
+				728CCA72309D364C00CDE944 /* Frameworks */,
+				728CCA73309D364C00CDE944 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFC0C0DE000000000000000F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				728CCA76309D364C00CDE944 /* AFPFS */,
+			);
+			name = AFPFS;
+			productName = AFPFS;
+			productReference = 728CCA75309D364C00CDE944 /* AFPFS.appex */;
+			productType = "com.apple.product-type.extensionkit-extension";
+		};
+		AFC0C0DE0000000000000005 /* AFPCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFC0C0DE0000000000000009 /* Build configuration list for PBXNativeTarget "AFPCore" */;
+			buildPhases = (
+				AFC0C0DE0000000000000006 /* Build libgcrypt */,
+				AFC0C0DE0000000000000007 /* Sources */,
+				AFC0C0DE0000000000000008 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			fileSystemSynchronizedGroups = (
+				AFC0C0DE0000000000000002 /* AFPCore */,
+				AFC0C0DE0000000000000003 /* netatalk-client lib */,
+			);
+			name = AFPCore;
+			productName = AFPCore;
+			productReference = AFC0C0DE0000000000000001 /* libAFPCore.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AFC0C0DE0000000000000027 /* AFPConnectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFC0C0DE0000000000000028 /* Build configuration list for PBXNativeTarget "AFPConnectTests" */;
+			buildPhases = (
+				AFC0C0DE0000000000000025 /* Sources */,
+				AFC0C0DE0000000000000026 /* Frameworks */,
+				AFC0C0DE000000000000002B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFC0C0DE0000000000000024 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				AFC0C0DE0000000000000021 /* Unit Tests */,
+			);
+			name = AFPConnectTests;
+			productName = AFPConnectTests;
+			productReference = AFC0C0DE0000000000000020 /* AFPConnectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AFC0C0DE00000000000001A3 /* AFPHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFC0C0DE00000000000001A8 /* Build configuration list for PBXNativeTarget "AFPHelper" */;
+			buildPhases = (
+				AFC0C0DE00000000000001A9 /* Sources */,
+				AFC0C0DE00000000000001A7 /* Frameworks */,
+				AFC0C0DE00000000000001AA /* Resources */,
+			);
+			buildRules = (
+			);
+			fileSystemSynchronizedGroups = (
+				AFC0C0DE00000000000001A6 /* AFPHelper */,
+			);
+			name = AFPHelper;
+			productName = AFPHelper;
+			productReference = AFC0C0DE00000000000001A1 /* AFPHelper.xpc */;
+			productType = "com.apple.product-type.xpc-service";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		728CCA57309D361700CDE944 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2710;
+				LastUpgradeCheck = 2710;
+				TargetAttributes = {
+					728CCA5E309D361700CDE944 = {
+						CreatedOnToolsVersion = 27.1;
+					};
+					728CCA74309D364C00CDE944 = {
+						CreatedOnToolsVersion = 27.1;
+					};
+					AFC0C0DE0000000000000005 = {
+						CreatedOnToolsVersion = 27.1;
+					};
+					AFC0C0DE0000000000000027 = {
+						CreatedOnToolsVersion = 27.1;
+					};
+					AFC0C0DE00000000000001A3 = {
+						CreatedOnToolsVersion = 27.1;
+					};
+				};
+			};
+			buildConfigurationList = 728CCA5A309D361700CDE944 /* Build configuration list for PBXProject "AFPConnect" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 728CCA56309D361700CDE944;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 728CCA60309D361700CDE944 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				728CCA5E309D361700CDE944 /* AFPConnect */,
+				728CCA74309D364C00CDE944 /* AFPFS */,
+				AFC0C0DE0000000000000005 /* AFPCore */,
+				AFC0C0DE0000000000000027 /* AFPConnectTests */,
+				AFC0C0DE00000000000001A3 /* AFPHelper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		728CCA5D309D361700CDE944 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		728CCA73309D364C00CDE944 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		AFC0C0DE000000000000002B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		AFC0C0DE00000000000001AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AFC0C0DE0000000000000006 /* Build libgcrypt */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			name = "Build libgcrypt";
+			shellPath = /bin/sh;
+			shellScript = (
+				"\"$SRCROOT/Scripts/build-deps.sh\"",
+				"",
+			);
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		728CCA5B309D361700CDE944 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		728CCA71309D364C00CDE944 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		AFC0C0DE0000000000000007 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		AFC0C0DE0000000000000025 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		AFC0C0DE00000000000001A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		728CCA80309D364C00CDE944 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 728CCA74309D364C00CDE944 /* AFPFS */;
+			targetProxy = 728CCA7F309D364C00CDE944 /* PBXContainerItemProxy */;
+		};
+		AFC0C0DE000000000000000F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFC0C0DE0000000000000005 /* AFPCore */;
+			targetProxy = AFC0C0DE000000000000000E /* PBXContainerItemProxy */;
+		};
+		AFC0C0DE0000000000000011 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFC0C0DE0000000000000005 /* AFPCore */;
+			targetProxy = AFC0C0DE0000000000000010 /* PBXContainerItemProxy */;
+		};
+		AFC0C0DE0000000000000024 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFC0C0DE0000000000000005 /* AFPCore */;
+			targetProxy = AFC0C0DE0000000000000023 /* PBXContainerItemProxy */;
+		};
+		AFC0C0DE00000000000001AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFC0C0DE00000000000001A3 /* AFPHelper */;
+			targetProxy = AFC0C0DE00000000000001A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		728CCA6C309D361700CDE944 /* Debug configuration for PBXProject "AFPConnect" */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFC0C0DE0000000000000012 /* Base.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = KN3YMY2X4D;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		728CCA6D309D361700CDE944 /* Release configuration for PBXProject "AFPConnect" */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFC0C0DE0000000000000012 /* Base.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = KN3YMY2X4D;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		728CCA6F309D361700CDE944 /* Debug configuration for PBXNativeTarget "AFPConnect" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AFPConnect;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AFPConnect/AFPConnect.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KN3YMY2X4D;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AFPConnect/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "AFPConnect finds and connects to file servers on your local network.";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_KEY_NSViewGestureRecognizerIsExclusive = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(AFPCORE_LDFLAGS)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.benjaminlowry.AFPConnect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		728CCA70309D361700CDE944 /* Release configuration for PBXNativeTarget "AFPConnect" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AFPConnect;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AFPConnect/AFPConnect.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KN3YMY2X4D;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AFPConnect/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "AFPConnect finds and connects to file servers on your local network.";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_KEY_NSViewGestureRecognizerIsExclusive = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(AFPCORE_LDFLAGS)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.benjaminlowry.AFPConnect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		728CCA84309D364C00CDE944 /* Debug configuration for PBXNativeTarget "AFPFS" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AFPFS/AFPFS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KN3YMY2X4D;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AFPFS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AFPFS;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(AFPCORE_LDFLAGS)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.benjaminlowry.AFPConnect.AFPFS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "AFPFS/AFPFS-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		728CCA85309D364C00CDE944 /* Release configuration for PBXNativeTarget "AFPFS" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AFPFS/AFPFS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KN3YMY2X4D;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AFPFS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AFPFS;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(AFPCORE_LDFLAGS)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.benjaminlowry.AFPConnect.AFPFS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "AFPFS/AFPFS-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AFC0C0DE000000000000000A /* Debug configuration for PBXNativeTarget "AFPCore" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KN3YMY2X4D;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WARNING_CFLAGS = "-Wno-conditional-uninitialized";
+			};
+			name = Debug;
+		};
+		AFC0C0DE000000000000000B /* Release configuration for PBXNativeTarget "AFPCore" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KN3YMY2X4D;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WARNING_CFLAGS = "-Wno-conditional-uninitialized";
+			};
+			name = Release;
+		};
+		AFC0C0DE0000000000000029 /* Debug configuration for PBXNativeTarget "AFPConnectTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KN3YMY2X4D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(AFPCORE_LDFLAGS)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.benjaminlowry.AFPConnect.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AFC0C0DE000000000000002A /* Release configuration for PBXNativeTarget "AFPConnectTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KN3YMY2X4D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(AFPCORE_LDFLAGS)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.benjaminlowry.AFPConnect.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AFC0C0DE00000000000001AC /* Debug configuration for PBXNativeTarget "AFPHelper" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KN3YMY2X4D;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AFPHelper/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AFPHelper;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.benjaminlowry.AFPConnect.AFPHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AFC0C0DE00000000000001AD /* Release configuration for PBXNativeTarget "AFPHelper" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KN3YMY2X4D;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AFPHelper/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AFPHelper;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.benjaminlowry.AFPConnect.AFPHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		728CCA5A309D361700CDE944 /* Build configuration list for PBXProject "AFPConnect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				728CCA6C309D361700CDE944 /* Debug configuration for PBXProject "AFPConnect" */,
+				728CCA6D309D361700CDE944 /* Release configuration for PBXProject "AFPConnect" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		728CCA6E309D361700CDE944 /* Build configuration list for PBXNativeTarget "AFPConnect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				728CCA6F309D361700CDE944 /* Debug configuration for PBXNativeTarget "AFPConnect" */,
+				728CCA70309D361700CDE944 /* Release configuration for PBXNativeTarget "AFPConnect" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		728CCA83309D364C00CDE944 /* Build configuration list for PBXNativeTarget "AFPFS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				728CCA84309D364C00CDE944 /* Debug configuration for PBXNativeTarget "AFPFS" */,
+				728CCA85309D364C00CDE944 /* Release configuration for PBXNativeTarget "AFPFS" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		AFC0C0DE0000000000000009 /* Build configuration list for PBXNativeTarget "AFPCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFC0C0DE000000000000000A /* Debug configuration for PBXNativeTarget "AFPCore" */,
+				AFC0C0DE000000000000000B /* Release configuration for PBXNativeTarget "AFPCore" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		AFC0C0DE0000000000000028 /* Build configuration list for PBXNativeTarget "AFPConnectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFC0C0DE0000000000000029 /* Debug configuration for PBXNativeTarget "AFPConnectTests" */,
+				AFC0C0DE000000000000002A /* Release configuration for PBXNativeTarget "AFPConnectTests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		AFC0C0DE00000000000001A8 /* Build configuration list for PBXNativeTarget "AFPHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFC0C0DE00000000000001AC /* Debug configuration for PBXNativeTarget "AFPHelper" */,
+				AFC0C0DE00000000000001AD /* Release configuration for PBXNativeTarget "AFPHelper" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 728CCA57309D361700CDE944 /* Project object */;
+	validationLevel = 1;
+}

@@ -1,0 +1,15 @@
+// Path to the copy of netatalk-client we're linking
+NETATALK_CLIENT_DIR = $(SRCROOT)/Vendor/netatalk-client
+// Path to the directory we built libgcrypt statically into
+DEPS_DIR = $(SRCROOT)/Vendor/build
+
+// netatalk-clients headers need to go on the user path and not the angle-bracket one since its names could shadow others
+USER_HEADER_SEARCH_PATHS = $(inherited) $(SRCROOT)/AFPCore $(NETATALK_CLIENT_DIR) $(NETATALK_CLIENT_DIR)/include $(NETATALK_CLIENT_DIR)/lib
+HEADER_SEARCH_PATHS = $(inherited) $(DEPS_DIR)/include
+LIBRARY_SEARCH_PATHS = $(inherited) $(DEPS_DIR)/lib
+
+// meson's preprocessor definitions + the AFP team ID as a string literal for keychain access group ids
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) NETATALK_CLIENT_VERSION=\"1.0.0\" _FILE_OFFSET_BITS=64 HAVE_SYS_XATTR_H=1 HAVE_LIBGCRYPT=1 AFP_TEAM_ID=\"$(DEVELOPMENT_TEAM)\"
+
+// linking flags for the app and extension
+AFPCORE_LDFLAGS = -lgcrypt -lgpg-error -liconv
