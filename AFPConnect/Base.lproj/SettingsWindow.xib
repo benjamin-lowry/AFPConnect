@@ -17,19 +17,19 @@
         <window title="AFPConnect Settings" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" frameAutosaveName="" animationBehavior="default" id="3nc-QF-Kzn">
             <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="140" y="177" width="599" height="562"/>
+            <rect key="contentRect" x="140" y="177" width="599" height="574"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1512" height="949"/>
             <view key="contentView" id="Tlo-Mw-wqO">
-                <rect key="frame" x="0.0" y="0.0" width="599" height="562"/>
+                <rect key="frame" x="0.0" y="0.0" width="599" height="629"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <gridView xPlacement="leading" yPlacement="top" rowAlignment="none" translatesAutoresizingMaskIntoConstraints="NO" id="viq-fb-yNv">
-                        <rect key="frame" x="50" y="20" width="499" height="522"/>
+                        <rect key="frame" x="50" y="20" width="499" height="589"/>
                         <constraints>
+                            <constraint firstItem="AIn-HL-nnT" firstAttribute="top" secondItem="pgl-FF-UYx" secondAttribute="bottom" constant="6" id="LgN-23-OaE"/>
                             <constraint firstItem="ddf-3N-K9S" firstAttribute="top" secondItem="mes-Rg-nZH" secondAttribute="bottom" constant="6" id="NyR-xv-cgV"/>
                             <constraint firstItem="pgl-FF-UYx" firstAttribute="top" secondItem="ddf-3N-K9S" secondAttribute="bottom" constant="6" id="TFx-dU-7OD"/>
                             <constraint firstItem="mes-Rg-nZH" firstAttribute="top" secondItem="L1q-B6-OsG" secondAttribute="bottom" constant="6" id="g7B-3T-gid"/>
-                            <constraint firstItem="qKp-4n-2Pe" firstAttribute="top" secondItem="pgl-FF-UYx" secondAttribute="bottom" constant="6" id="u5e-t2-urN"/>
                         </constraints>
                         <rows>
                             <gridRow height="26" id="gB9-lW-YiM"/>
@@ -47,7 +47,7 @@
                             <gridCell row="gB9-lW-YiM" column="0Z8-ZT-Ffo" id="5Nf-YA-Dhx"/>
                             <gridCell row="gB9-lW-YiM" column="tQN-iE-7Yp" id="Ki9-jW-FWa">
                                 <textField key="contentView" focusRingType="none" verticalHuggingPriority="750" textFieldBorderShape="none" translatesAutoresizingMaskIntoConstraints="NO" id="vdC-df-v9x">
-                                    <rect key="frame" x="104" y="506" width="354" height="16"/>
+                                    <rect key="frame" x="104" y="573" width="354" height="16"/>
                                     <textFieldCell key="cell" title="Changes to these settings will apply to future mounts." id="ecU-xl-2hf">
                                         <font key="font" metaFont="systemBold"/>
                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -57,7 +57,7 @@
                             </gridCell>
                             <gridCell row="OQp-cQ-Ipi" column="0Z8-ZT-Ffo" id="5KD-vP-rtF">
                                 <textField key="contentView" focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" textFieldBorderShape="none" translatesAutoresizingMaskIntoConstraints="NO" id="qKT-4r-UKF">
-                                    <rect key="frame" x="-2" y="474" width="80" height="16"/>
+                                    <rect key="frame" x="-2" y="541" width="80" height="16"/>
                                     <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="Localization:" id="sso-Lh-6F3">
                                         <font key="font" usesAppearanceFont="YES"/>
                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -67,7 +67,7 @@
                             </gridCell>
                             <gridCell row="OQp-cQ-Ipi" column="tQN-iE-7Yp" id="nYT-uG-IPD">
                                 <button key="contentView" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="L1q-B6-OsG">
-                                    <rect key="frame" x="106" y="474" width="337" height="16"/>
+                                    <rect key="frame" x="106" y="541" width="337" height="16"/>
                                     <buttonCell key="cell" type="check" title="Transliterate non-ASCII share names in mount paths" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="1Ve-Rb-a0Z">
                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                         <font key="font" metaFont="system"/>
@@ -80,7 +80,7 @@
                             <gridCell row="Idw-nl-IFj" column="0Z8-ZT-Ffo" id="f1J-a0-kqB"/>
                             <gridCell row="Idw-nl-IFj" column="tQN-iE-7Yp" id="79U-f2-HvD">
                                 <textField key="contentView" focusRingType="none" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" textFieldBorderShape="none" translatesAutoresizingMaskIntoConstraints="NO" id="mes-Rg-nZH">
-                                    <rect key="frame" x="104" y="333" width="397" height="135"/>
+                                    <rect key="frame" x="104" y="400" width="397" height="135"/>
                                     <textFieldCell key="cell" selectable="YES" enabled="NO" id="Fmy-PF-zTp">
                                         <font key="font" textStyle="footnote" name=".SFNS-Regular"/>
                                         <string key="title">macOS doesn't allow mounting into a path that contains non-ASCII characters. When this setting is enabled, non-ASCII characters will be mapped to ASCII; when disabled, non-ASCII characters will be replaced with underscores. For example: with a share named "các tệp của tôi",
@@ -95,7 +95,7 @@ This does not affect the share name displayed in the Finder, only the filesystem
                             </gridCell>
                             <gridCell row="LeY-gi-hUn" column="0Z8-ZT-Ffo" id="mld-Hn-JA9">
                                 <textField key="contentView" focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" textFieldBorderShape="none" translatesAutoresizingMaskIntoConstraints="NO" id="k8X-fG-b3C">
-                                    <rect key="frame" x="-2" y="311" width="104" height="16"/>
+                                    <rect key="frame" x="-2" y="378" width="104" height="16"/>
                                     <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="File timestamps:" id="uy2-Rb-pDw">
                                         <font key="font" usesAppearanceFont="YES"/>
                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -105,7 +105,7 @@ This does not affect the share name displayed in the Finder, only the filesystem
                             </gridCell>
                             <gridCell row="LeY-gi-hUn" column="tQN-iE-7Yp" id="H00-I7-NIg">
                                 <stackView key="contentView" distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ddf-3N-K9S">
-                                    <rect key="frame" x="106" y="263" width="323" height="64"/>
+                                    <rect key="frame" x="106" y="330" width="323" height="64"/>
                                     <subviews>
                                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QlG-7q-gor">
                                             <rect key="frame" x="0.0" y="48" width="194" height="16"/>
@@ -165,7 +165,7 @@ This does not affect the share name displayed in the Finder, only the filesystem
                             <gridCell row="zF8-gW-jgz" column="0Z8-ZT-Ffo" id="kXg-zB-Z6p"/>
                             <gridCell row="zF8-gW-jgz" column="tQN-iE-7Yp" id="UWO-zI-RaE">
                                 <textField key="contentView" focusRingType="none" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" textFieldBorderShape="none" translatesAutoresizingMaskIntoConstraints="NO" id="pgl-FF-UYx">
-                                    <rect key="frame" x="104" y="47" width="397" height="210"/>
+                                    <rect key="frame" x="104" y="114" width="397" height="210"/>
                                     <textFieldCell key="cell" selectable="YES" enabled="NO" id="yTx-z3-hXK">
                                         <font key="font" textStyle="footnote" name=".SFNS-Regular"/>
                                         <string key="title">This setting determines how creation and modification timestamps are corrected according to the discrepancy between the local time and the AFP server's time.
@@ -182,7 +182,7 @@ This does not affect the share name displayed in the Finder, only the filesystem
                             </gridCell>
                             <gridCell row="BbW-Ub-lHF" column="0Z8-ZT-Ffo" id="7h4-2y-ufx">
                                 <textField key="contentView" focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" textFieldBorderShape="none" translatesAutoresizingMaskIntoConstraints="NO" id="B1p-nd-rPz">
-                                    <rect key="frame" x="-2" y="25" width="59" height="16"/>
+                                    <rect key="frame" x="-2" y="92" width="59" height="16"/>
                                     <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="Updates:" id="PEJ-pb-bg1">
                                         <font key="font" usesAppearanceFont="YES"/>
                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -191,16 +191,65 @@ This does not affect the share name displayed in the Finder, only the filesystem
                                 </textField>
                             </gridCell>
                             <gridCell row="BbW-Ub-lHF" column="tQN-iE-7Yp" id="C4n-x4-XWD">
-                                <button key="contentView" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qKp-4n-2Pe">
-                                    <rect key="frame" x="106" y="25" width="218" height="16"/>
-                                    <buttonCell key="cell" type="check" title="Check for updates automatically" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="e2P-gb-USe">
-                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                        <font key="font" metaFont="system"/>
-                                    </buttonCell>
-                                    <connections>
-                                        <binding destination="-3" name="value" keyPath="delegate.updaterController.updater.automaticallyChecksForUpdates" id="rVs-4k-US9"/>
-                                    </connections>
-                                </button>
+                                <stackView key="contentView" distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AIn-HL-nnT">
+                                    <rect key="frame" x="106" y="21" width="383" height="87"/>
+                                    <subviews>
+                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ohl-CH-K5Q">
+                                            <rect key="frame" x="0.0" y="71" width="218" height="16"/>
+                                            <buttonCell key="cell" type="check" title="Check for updates automatically" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="LfQ-zo-P0j">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                                <connections>
+                                                    <binding destination="-3" name="value" keyPath="delegate.updaterController.updater.automaticallyChecksForUpdates" id="Uw7-K5-0AC"/>
+                                                </connections>
+                                            </buttonCell>
+                                            <connections>
+                                                <binding destination="-3" name="value" keyPath="delegate.updaterController.updater.automaticallyChecksForUpdates" id="vH1-7N-mqq"/>
+                                            </connections>
+                                        </button>
+                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QJP-gq-SzX">
+                                            <rect key="frame" x="0.0" y="47" width="258" height="16"/>
+                                            <buttonCell key="cell" type="check" title="Download found updates automatically" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="koi-je-Rwa">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <binding destination="-3" name="enabled" keyPath="delegate.updaterController.updater.automaticallyChecksForUpdates" id="NUx-MB-tx1"/>
+                                                <binding destination="-3" name="value" keyPath="delegate.updaterController.updater.automaticallyDownloadsUpdates" id="Gkv-WY-wTJ"/>
+                                            </connections>
+                                        </button>
+                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="lJ9-cw-Wde">
+                                            <rect key="frame" x="0.0" y="23" width="383" height="16"/>
+                                            <buttonCell key="cell" type="check" title="Send anonymous system profile when checking for updates" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Bbn-bD-iWh">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <binding destination="-3" name="value" keyPath="delegate.updaterController.updater.sendsSystemProfile" id="cHs-wp-U1P"/>
+                                            </connections>
+                                        </button>
+                                        <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" textFieldBorderShape="none" translatesAutoresizingMaskIntoConstraints="NO" id="0st-B6-GG7">
+                                            <rect key="frame" x="-2" y="0.0" width="244" height="15"/>
+                                            <textFieldCell key="cell" lineBreakMode="clipping" title="e.g. macOS version, Mac model, system language" id="4Gx-9Q-0Fu">
+                                                <font key="font" textStyle="footnote" name=".SFNS-Regular"/>
+                                                <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </subviews>
+                                    <visibilityPriorities>
+                                        <integer value="1000"/>
+                                        <integer value="1000"/>
+                                        <integer value="1000"/>
+                                        <integer value="1000"/>
+                                    </visibilityPriorities>
+                                    <customSpacing>
+                                        <real value="3.4028234663852886e+38"/>
+                                        <real value="3.4028234663852886e+38"/>
+                                        <real value="3.4028234663852886e+38"/>
+                                        <real value="3.4028234663852886e+38"/>
+                                    </customSpacing>
+                                </stackView>
                             </gridCell>
                         </gridCells>
                     </gridView>
@@ -212,7 +261,7 @@ This does not affect the share name displayed in the Finder, only the filesystem
                     <constraint firstAttribute="trailing" secondItem="viq-fb-yNv" secondAttribute="trailing" constant="50" id="y0M-bH-XOv"/>
                 </constraints>
             </view>
-            <point key="canvasLocation" x="84.5" y="217"/>
+            <point key="canvasLocation" x="84.5" y="223"/>
         </window>
         <userDefaultsController representsSharedInstance="YES" id="niA-Kc-DLq"/>
     </objects>
