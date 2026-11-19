@@ -42,7 +42,21 @@
     ACSettingsWindowController *_settings;
     ACModalQuitTarget *_quitTarget;
     BOOL _launched;
+    BOOL _enabledUpdater;
     NSMutableArray<NSURL *> *_pendingURLs;
+}
+
+- (instancetype)init {
+    if ((self = [super init]))
+        /* Start the updater disabled, since we don't know yet whether we're going to
+           block all the UI with the "enable our fskit extension pls" modal.
+           Once we know the extension is enabled, we'll enable the updater */
+        _updaterController = [[SPUStandardUpdaterController alloc] initWithStartingUpdater:NO updaterDelegate:nil userDriverDelegate:nil];
+    return self;
+}
+
+- (IBAction)checkForUpdates:(id)sender {
+    [self.updaterController checkForUpdates:sender];
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
@@ -103,6 +117,12 @@
     [self.connectController showWindow:sender];
 }
 
+- (BOOL)validateMenuItem:(NSMenuItem *)menuItem {
+    if (menuItem.action == @selector(showConnect:))
+        return self.updaterController.updater.canCheckForUpdates;
+    return YES;
+}
+
 - (IBAction)showSettings:(id)sender
 {
     if (!_settings) {
@@ -139,6 +159,10 @@
     __weak __block ACConnectWindowController *connect = _connect;
     [ACMounter checkExtension:^(BOOL installed, BOOL enabled) {
         if (enabled) {
+            if (!self->_enabledUpdater) {
+                self->_enabledUpdater = YES;
+                [self.updaterController startUpdater];
+            }
             return;
         }
         // kill any running connection

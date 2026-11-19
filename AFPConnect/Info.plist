@@ -8,8 +8,6 @@
 	<string>R/OIatJvVb51iz0vqun3Mf85FYgedhvrwPrhEgvdX/U=</string>
 	<key>SUFeedURL</key>
 	<string>https://appdl.benjaminlowry.com/afpconnect/appcast.xml</string>
-	<key>SUEnableAutomaticChecks</key>
-	<true/>
 	<key>SURequireSignedFeed</key>
 	<true/>
 	<key>SUVerifyUpdateBeforeExtraction</key>

@@ -8,9 +8,9 @@
 #import <Cocoa/Cocoa.h>
 #import <Sparkle/Sparkle.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface AppDelegate : NSObject <NSApplicationDelegate, NSMenuItemValidation>
 
-@property (strong) IBOutlet SPUStandardUpdaterController *updaterController;
+@property (strong) SPUStandardUpdaterController *updaterController;
 - (void)checkExtension;
 
 @end
