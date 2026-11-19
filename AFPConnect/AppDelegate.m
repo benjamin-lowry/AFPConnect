@@ -252,4 +252,9 @@
 {
     [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"mailto:benjamin@anachronist.io"]];
 }
+
+- (IBAction)openWebsite:(id)sender
+{
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"https://www.benjaminlowry.com/apps/afpconnect.html"]];
+}
 @end

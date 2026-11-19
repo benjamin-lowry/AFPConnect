@@ -366,6 +366,12 @@
                                     <action selector="showHelp:" target="-1" id="y7X-2Q-9no"/>
                                 </connections>
                             </menuItem>
+                            <menuItem title="AFPConnect Homepage" image="globe" catalog="system" id="CDi-8a-XYj">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="openWebsite:" target="Voe-Tx-rLC" id="ER7-Ns-acy"/>
+                                </connections>
+                            </menuItem>
                             <menuItem title="Email me!" image="envelope" catalog="system" id="oyq-Kp-pnG">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
@@ -374,11 +380,11 @@
                             </menuItem>
                             <menuItem enabled="NO" id="pey-rQ-B0E">
                                 <string key="title">warning: I am an overworked college student
-who will probably not have time to respond to you</string>
+who may not have time to respond to you</string>
                                 <attributedString key="attributedTitle">
                                     <fragment>
                                         <string key="content">warning: I am an overworked college student
-who will probably not have time to respond to you</string>
+who may not have time to respond to you</string>
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" metaFont="smallSystem"/>
@@ -396,5 +402,6 @@ who will probably not have time to respond to you</string>
     </objects>
     <resources>
         <image name="envelope" catalog="system" width="19" height="13"/>
+        <image name="globe" catalog="system" width="15" height="15"/>
     </resources>
 </document>
