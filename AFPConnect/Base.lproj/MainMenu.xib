@@ -12,7 +12,11 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customObject id="Voe-Tx-rLC" customClass="AppDelegate"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
+            <connections>
+                <outlet property="updaterController" destination="tcr-XB-wId" id="Jdj-Br-AJ2"/>
+            </connections>
+        </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
             <items>
@@ -30,6 +34,12 @@
                             <menuItem title="Settings…" keyEquivalent="," id="BOF-NM-1cW">
                                 <connections>
                                     <action selector="showSettings:" target="Voe-Tx-rLC" id="AFC-Se-t01"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Check for Updates..." id="n30-nx-G2h">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="checkForUpdates:" target="tcr-XB-wId" id="HwR-Tw-Dvc"/>
                                 </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
@@ -399,6 +409,7 @@ who may not have time to respond to you</string>
             </items>
             <point key="canvasLocation" x="200" y="121"/>
         </menu>
+        <customObject id="tcr-XB-wId" customClass="SPUStandardUpdaterController"/>
     </objects>
     <resources>
         <image name="envelope" catalog="system" width="19" height="13"/>

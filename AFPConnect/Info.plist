@@ -2,6 +2,20 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>SUEnableSystemProfiling</key>
+	<true/>
+	<key>SUPublicEDKey</key>
+	<string>R/OIatJvVb51iz0vqun3Mf85FYgedhvrwPrhEgvdX/U=</string>
+	<key>SUFeedURL</key>
+	<string>https://appdl.benjaminlowry.com/afpconnect/appcast.xml</string>
+	<key>SUEnableAutomaticChecks</key>
+	<true/>
+	<key>SURequireSignedFeed</key>
+	<true/>
+	<key>SUVerifyUpdateBeforeExtraction</key>
+	<true/>
+	<key>SUEnableInstallerLauncherService</key>
+	<true/>
 	<key>NSBonjourServices</key>
 	<array>
 		<string>_afpovertcp._tcp</string>

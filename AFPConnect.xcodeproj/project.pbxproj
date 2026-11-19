@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		728CCA81309D364C00CDE944 /* AFPFS.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = 728CCA75309D364C00CDE944 /* AFPFS.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		72A0A1A630AECB9400C25F46 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 72A0A1A530AECB9400C25F46 /* Sparkle */; };
 		AFC0C0DE000000000000000C /* libAFPCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC0C0DE0000000000000001 /* libAFPCore.a */; };
 		AFC0C0DE000000000000000D /* libAFPCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC0C0DE0000000000000001 /* libAFPCore.a */; };
 		AFC0C0DE0000000000000022 /* libAFPCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC0C0DE0000000000000001 /* libAFPCore.a */; };
@@ -155,6 +156,7 @@
 			isa = PBXFrameworksBuildPhase;
 			files = (
 				AFC0C0DE000000000000000D /* libAFPCore.a in Frameworks */,
+				72A0A1A630AECB9400C25F46 /* Sparkle in Frameworks */,
 			);
 		};
 		728CCA72309D364C00CDE944 /* Frameworks */ = {
@@ -240,6 +242,9 @@
 				728CCA61309D361700CDE944 /* AFPConnect */,
 			);
 			name = AFPConnect;
+			packageProductDependencies = (
+				72A0A1A530AECB9400C25F46 /* Sparkle */,
+			);
 			productName = AFPConnect;
 			productReference = 728CCA5F309D361700CDE944 /* AFPConnect.app */;
 			productType = "com.apple.product-type.application";
@@ -359,6 +364,9 @@
 			);
 			mainGroup = 728CCA56309D361700CDE944;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				72A0A1A430AECB9400C25F46 /* XCRemoteSwiftPackageReference "Sparkle" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 728CCA60309D361700CDE944 /* Products */;
 			projectDirPath = "";
@@ -502,7 +510,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = KN3YMY2X4D;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -569,7 +577,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = KN3YMY2X4D;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -599,10 +607,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AFPConnect;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = AFPConnect/AFPConnect.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = KN3YMY2X4D;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -626,6 +634,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.benjaminlowry.AFPConnect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				REGISTER_APP_GROUPS = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -638,10 +647,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AFPConnect;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = AFPConnect/AFPConnect.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = KN3YMY2X4D;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -665,6 +674,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.benjaminlowry.AFPConnect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				REGISTER_APP_GROUPS = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -676,7 +686,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = AFPFS/AFPFS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = KN3YMY2X4D;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -711,7 +721,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = AFPFS/AFPFS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = KN3YMY2X4D;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -773,11 +783,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = KN3YMY2X4D;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 27.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"$(AFPCORE_LDFLAGS)",
@@ -791,11 +801,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = KN3YMY2X4D;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 27.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"$(AFPCORE_LDFLAGS)",
@@ -809,7 +819,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = KN3YMY2X4D;
 				ENABLE_APP_SANDBOX = NO;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -829,7 +839,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = KN3YMY2X4D;
 				ENABLE_APP_SANDBOX = NO;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -897,6 +907,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		72A0A1A430AECB9400C25F46 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.10.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		72A0A1A530AECB9400C25F46 /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 72A0A1A430AECB9400C25F46 /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 728CCA57309D361700CDE944 /* Project object */;
 	validationLevel = 1;
